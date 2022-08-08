@@ -1,0 +1,662 @@
+
+/*Header*/
+
+body{
+    margin:0px;
+    padding: 0px;
+}
+
+header {
+height: 58px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 0;
+width:100%;
+margin-top:0px;
+
+
+}
+
+header h1 a {
+    font-family: 'Roboto', sans-serif;
+    color: #5C5C5C;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-left:35px;
+    text-decoration: none;
+}
+
+    
+header nav ul {
+    list-style-type: none;
+    display: flex;
+  justify-content: center;
+   
+}
+
+header nav ul li {
+    display: flex;
+    align-items:center;
+    font-size: 14px;
+    line-height: 1.42857143;
+}
+
+header nav ul li a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #777;
+    line-height: 28px;
+    padding: 10px 15px;
+    background-color: transparent;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+header{
+    position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+    background-color: #ffffff;
+    z-index: 99999999;
+}
+
+
+
+/*Introduce*/
+
+.introduce {
+    background-image: url('https://www.tooplate.com/templates/2076_zentro/images/home-bg.jpg');
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+    background-size: cover; 
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    }
+
+.restaurant{
+    display: inline-block;
+    width:55%;
+}
+
+.restaurant h1  {
+font-size: 20px;
+    letter-spacing: 8px;
+    font-style: normal;
+    padding-top: 10px;
+    margin: 0.67em 0;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: white;
+}
+
+.slogan h2 {
+font-size: 30px;
+font-family: inherit;
+    font-weight: 600;
+    line-height: 1.1;
+    color:white;
+    margin-top: 10px;
+}
+    
+.submit-button{
+    border:solid 3px white;
+    background: transparent;
+    padding: 16px 42px;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: white;
+    margin-top: 25px;
+}
+
+.submit-button:hover{
+    background-color: #ffffff;
+    color:rgb(0, 12, 12);
+    cursor:pointer;
+}
+
+
+/*Food Gallery Section*/
+
+@keyframes showme {
+    to   { visibility: visible; }
+   
+}    
+
+
+section div h1 ,
+footer div h1
+ {
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif ;
+    line-height: 1.1;
+    text-align:center;
+}
+ hr {
+    border-top: 2px solid #828282;
+    width: 120px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+   }
+   
+   .gallery{
+    display: flex;
+    flex-direction: row;
+   padding-bottom:65px;
+   justify-content: center;
+}
+
+.card-container{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    padding:52px 0px 15px 15px;
+    animation: showme 0s 2s forwards;
+    visibility: hidden;
+     }
+ 
+.card > div img {
+    width: 100%;
+    
+   
+}
+.card-body > p {
+    padding-bottom:25px;
+    margin:0;
+    font-family:'Roboto', sans-serif;
+    line-height:20px;
+    font-size:14px;
+    color: #333333;
+    font-weight: 400;
+  }
+.card-body > h2{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 8px;
+    font-family: 'Roboto', sans-serif; 
+    font-weight: 500;
+    font-style: normal;
+    color:#333333;
+ }
+
+/*Menu*/
+
+.food-menu,
+.food-menu div{
+    background: #f0f0f0;
+    margin-left: 0px;
+    margin-left: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.menu-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+    padding-top:42px;
+}
+
+
+ul.leaders {
+    max-width: 30em;
+    padding: 0;
+    overflow-x: hidden;
+    list-style: none;
+    background-color:#f0f0f0;
+   
+   }
+
+ul.leaders li .money::before {
+    /* float: right; */
+     width: 10px; 
+    margin-top: 10px;
+    margin-bottom: 10px;
+    white-space: nowrap;
+    content: " ..................."
+}
+ul.leaders span:first-child {
+    padding-right: 0.33em;
+}
+ul.leaders span + span {
+     float: right; 
+    /* padding-left: 0.33em; */
+    }
+
+    .leaders li >span{
+        line-height: 1.5;
+        font-size: 18px;
+        font-family: 'Roboto', sans-serif;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-weight: 500;      
+    }
+
+  .first-menu .leaders span,
+  .second-menu .leaders span{
+    background-color:#f0f0f0;
+
+  }
+
+  .first-menu .leaders li >span,
+  .second-menu .leaders li >span{
+    background-color:#f0f0f0;
+
+  }
+
+    .money{
+        color: #5C5C5C;
+        line-height: 1.5;
+        font-size: 18px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        text-align: center;     
+          }
+
+    .ingredients{
+        font-size: 14px;
+        font-family: inherit;
+        font-weight: 500;
+        line-height: 1.1;
+        color: inherit;
+        margin-top: 10px;
+        margin-bottom: 10px
+
+        }
+      
+        
+
+    .food-menu {
+        padding-bottom: 50px;
+ 
+    }
+
+     .leaders li {
+        padding: 0px 18px 15px 15px;
+    } 
+ 
+    section{ 
+        padding-top:80px ;
+
+    }
+ 
+    .leaders{
+        width:100%;
+    }
+
+    /*Staff*/
+
+    .our-people{
+        padding-top:100px;
+        padding-bottom: 100px; 
+    }
+
+    .people-container{
+        display:flex;
+        flex-direction:row;
+        justify-content: center;
+        
+    }
+
+    .cards > div img {
+        width: 350px;
+        height:300px;
+        padding-top: 42px;
+        padding-left: 18px;
+        padding-right: 18px;
+  }
+
+  .cards-body h2{
+    color: #5C5C5C;
+    padding-top: 24px;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+   font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    line-height: 1.1;
+   text-align: center;
+   
+}
+
+.cards-body p {
+    font-size: 18px;
+    line-height: 4px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    text-align: center;
+   
+    color: #333333;
+
+}
+
+
+/*Contact*/
+.contact{
+    padding-top:80px;
+    background: #f0f0f0;
+    background-size: cover;
+    padding-bottom:80px;
+ }
+
+.container-contact{
+    padding-left: 15px;
+    padding-right:15px;
+    margin-left: 100px;
+    margin-right:100px;
+}
+
+.name input, .email input{
+    width: 97%;
+    height:30px;
+    /* padding-left: 15px;
+    padding-right:15px; */
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #333;
+    /* float: right; */
+    margin-bottom:20px;
+    align-self: center;
+}
+   .name, 
+   .email{
+    width: 47%;
+   }
+ 
+.name-email{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 95%;
+}
+.messages{
+    display:inline-block;
+    width:100%;
+}
+.messages textarea{
+    width: 97%;
+    height: 160px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #333;
+    background-color: white;
+    resize: none;
+     }
+
+.container-contact{
+display:flex;
+flex-direction: column;
+align-items: center;
+ 
+}
+
+/*  .area-submit{
+    display:flex;
+    flex-direction:column;
+    align-items:center; 
+} */
+
+.reservation input{
+    background: transparent;
+    border: 2px solid #999;
+    border-radius: 10px;
+    letter-spacing: 2px;
+    margin-top: 12px;
+    height: 50px;
+    margin-bottom: 10px;
+    width:300px;
+    text-transform:lowercase;
+}
+
+.reservation input:hover{
+    cursor: pointer;
+    background-color: #999;
+    color: #f0f0f0;
+
+}
+
+/*Footer*/
+
+.first-section{
+    padding-top:100px;
+    margin-top:0px;
+    background-image: url('https://www.tooplate.com/templates/2076_zentro/images/footer-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    margin-bottom: 0px;
+    
+    
+        background-attachment: fixed !important;
+        
+  }
+
+  .contact-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+
+  .open span{
+   margin: 20px;
+  }
+
+  
+
+  .social-media{
+    display: flex;
+    flex-direction: row;
+    
+  }
+
+footer div h3{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #ffffff;
+    font-style: normal;
+    font-size: 22px;
+    line-height: 24px;
+}
+
+.contact-container span ,
+.adress span,
+.open p,
+.second-section p,
+.second-section span a{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.contact-container ion-icon ,
+.adress ion-icon{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 12px;
+    padding-right: 10px;
+}
+
+.contact-container p ,
+.adress p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #ffffff;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 20px;
+    padding-right: 10px;
+}
+
+.open span{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 28px;
+    padding-right: 10px;
+}
+
+.social-media ion-icon{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+    font-style: normal;
+    font-size: 30px;
+    line-height: 48px;
+    padding-right: 18px;
+}
+
+.second-section h4{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #ffffff;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 26px;
+ }
+
+ .second-section{
+    background: #343434;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px;
+    padding: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+ }
+
+ .second-section h4{
+    margin-top:0px;
+    margin-bottom:0px;
+ }
+
+ .second-section p{
+    margin-top: 10px;
+ }
+
+ /* .second-section{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    
+ } */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ @media screen and (max-width: 640px) {
+    header {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-top: 30px;
+        position: static;
+    }
+    
+    .menu {
+    padding: 0;
+    align-items: center;
+    flex-direction: column;
+    }
+    .gallery {
+        display: block;
+    }
+     .card-container {
+        padding: 52px 0px 15px 0;
+    }
+    .card-container .card-body {
+        text-align: center;
+    }
+    .food-menu {
+        display: block;
+    }
+    .menu-container {
+        display: block;
+    }
+    .people-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+     .container-contact{
+        margin-left:0px;
+        margin-right:0px;
+
+
+    } 
+
+       .first-section {
+        height: 100%;
+        padding-top: 0;
+    }
+    .contact-info{
+        display: block;
+        padding: 30px;
+    }
+  }
+
+
+ 
+   @media screen and (max-width: 1120px) {
+
+ .people-container{
+    width:100%;
+   
+}  
+
+
+
+.cards > div img{
+    width: 82%;
+
+}
+
+}  
